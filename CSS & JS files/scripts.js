@@ -29,7 +29,7 @@ const phrases = [
       currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length; // Cycle through the phrases
     }
   
-    setTimeout(typeWriter, isDeleting ? 100 : 150); // Speed of typing
+    setTimeout(typeWriter, isDeleting ? 100 : 100); // Speed of typing
   }
   
   window.onload = typeWriter;
