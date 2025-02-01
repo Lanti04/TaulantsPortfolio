@@ -49,6 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
   typeWriter();
 });
+
+//hamburger menu js
+// Select elements
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+// Toggle menu on click
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
   
 // CV Modal functionality
 document.addEventListener('DOMContentLoaded', function() {
