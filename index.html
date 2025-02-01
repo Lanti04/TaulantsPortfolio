@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taulant Llumnica - Portfolio</title>
+  <link rel="stylesheet" href="/CSS & JS files/Style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="/CSS & JS files/scripts.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Homepage (Hero Section) -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="/Images/pfp3.jpg" alt="Taulant Llumnica" class="hero-img">
+      <div class="intro-text">
+        <h1>Hi, I'm <span class="name">Taulant Llumnica</span></h1>
+        <h2 id="intro-typing"></h2>
+        <a href="#projects" class="cta-button">View My Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm passionate about building impactful digital solutions. Currently studying Software Development at Fontys University of Applied Science, I have knowledge in programming, web design, and mobile app development. I'm familiar with several IDEs, including IntelliJ IDEA, Visual Studio Code, and Eclipse. I work well in team environments, enjoy collaborating to achieve goals, and thrive on solving complex challenges. I'm dedicated to continuously improving my skills through hands-on projects and staying up-to-date with industry trends.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>Tickify Website</h3>
+                    <p>A ticketing platform for events.</p>
+                </div>
+                <div class="card-back">
+                    <p>Built with HTML, CSS, PHP, SQL, and Docker. Provides seamless event creation and ticket sales management.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fas fa-plane"></i>
+                    <h3>Airline Management System</h3>
+                    <p>A system for managing airlines.</p>
+                </div>
+                <div class="card-back">
+                    <p>Built with Java, SQL, PostgreSQL, and IntelliJ IDEA. Optimizes airline operations efficiently.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Treasure Map App</h3>
+                    <p>Interactive treasure hunts.</p>
+                </div>
+                <div class="card-back">
+                    <p>Built with Kotlin and LoopBack. Enhances user experience with gamified adventures.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Java, Kotlin, PHP</li>
+      <li>Agile methodologies (Scrum, Waterfall)</li>
+      <li>Git, Docker, PostgreSQL</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to connect, feel free to reach out to me through the following platforms:</p>
+    <div class="socialcontainer">
+      <a href="https://github.com" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="www.linkedin.com/in/taulant-llumnica-16a63921b" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/taulantllumnica/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <!-- Modal -->
+    <button id="cvButton" class="cv-button">View CV</button>
+
+    <!-- Modal -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <iframe src="/FInished CV.pdf"></iframe>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Taulant Llumnica. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
