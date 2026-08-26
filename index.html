@@ -1,137 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Taulant Llumnica - Portfolio</title>
-  <link rel="stylesheet" href="CSS & JS files/Style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="CSS & JS files/scripts.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taulant Llumnica - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="Style.css" />
 </head>
 <body>
-  <!-- Navigation -->
-  <header> 
-    <button class="menu-toggle">&#9776;</button> 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
 
-  
-  <!-- Homepage (Hero Section) -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <img src="Images/pfp3.jpg" alt="Taulant Llumnica" class="hero-img">
-      <div class="intro-text">
-        <h1>Hi, I'm <span class="name">Taulant Llumnica</span></h1>
-        <h2 id="intro-typing"></h2>
-        <a href="#projects" class="cta-button">View My Projects</a>
-      </div>
-    </div>
-  </section>
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm passionate about building impactful digital solutions. Currently studying Software Development at Fontys University of Applied Science, I have knowledge in programming, web design, and mobile app development. I'm familiar with several IDEs, including IntelliJ IDEA, Visual Studio Code, and Eclipse. I work well in team environments, enjoy collaborating to achieve goals, and thrive on solving complex challenges. I'm dedicated to continuously improving my skills through hands-on projects and staying up-to-date with industry trends.</p>
-  </section>
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/profile.jpg" alt="Taulant Llumnica" class="hero-img" />
+            <div class="intro-text">
+                <h1>Hi, I'm <span class="name">Taulant Llumnica</span></h1>
+                <p id="intro-typing"></p>
+            </div>
+            <a href="#projects" class="cta-button">View My Projects</a>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-cards">
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <i class="fas fa-ticket-alt"></i>
-                    <h3>Tickify Website</h3>
-                    <p>A ticketing platform for events.</p>
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm passionate about building impactful digital solutions. Currently studying Software
+            Development at Fontys University of Applied Sciences, I have knowledge in programming,
+            web design, and mobile app development. I'm familiar with several IDEs, including
+            IntelliJ IDEA, Visual Studio Code, and Eclipse. I work well in team environments, enjoy
+            collaborating to achieve goals, and thrive on solving complex challenges. I'm dedicated
+            to continuously improving my skills through hands-on projects and staying up-to-date
+            with industry trends.
+        </p>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- ===== FEATURED WORK — standalone, image-based (no timeline) ===== -->
+        <h3 class="subsection-title">Featured Work</h3>
+        <div class="featured-projects">
+
+            <!-- TOB -->
+            <article class="featured-project">
+                <div class="featured-slideshow" data-project="tob">
+                    <div class="slides">
+                        <!-- Replace these paths with your actual screenshots -->
+                        <img class="slide active" src="images/tob/tob-1.jpg" alt="TOB – Homepage" />
+                        <img class="slide" src="images/tob/tob-2.jpg" alt="TOB – Project gallery" />
+                        <img class="slide" src="images/tob/tob-3.jpg" alt="TOB – Services" />
+                        <img class="slide" src="images/tob/tob-4.jpg" alt="TOB – Contact page" />
+                    </div>
+                    <button class="slide-arrow slide-prev" aria-label="Previous slide">&#10094;</button>
+                    <button class="slide-arrow slide-next" aria-label="Next slide">&#10095;</button>
+                    <div class="slideshow-dots"></div>
+                    <span class="expand-hint"><i class="fas fa-expand"></i></span>
                 </div>
-                <div class="card-back">
-                    <p>Built with HTML, CSS, PHP, SQL, and Docker. Provides seamless event creation and ticket sales management.</p>
+
+                <div class="featured-info">
+                    <span class="featured-tag">Freelance · Live Business Website</span>
+                    <h3>TOB – Technische Objektbetreuung</h3>
+                    <p>
+                        A bilingual (German / English) business website built for a property
+                        restoration and tiling company, covering water damage restoration, fire
+                        damage restoration, and professional tiling services. Includes a filterable
+                        project gallery with before/after comparisons, customer testimonials, and a
+                        contact page with an embedded map.
+                    </p>
+                    <div class="tech-tags">
+                        <span>PHP</span><span>JavaScript</span><span>Three.js</span>
+                        <span>MySQL</span><span>Responsive Design</span><span>DE / EN i18n</span>
+                    </div>
+                    <a href="https://tob-service.de/" target="_blank" rel="noopener" class="cta-button small">
+                        Visit Live Site <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- ProjectFlow -->
+            <article class="featured-project reverse">
+                <div class="featured-slideshow" data-project="projectflow">
+                    <div class="slides">
+                        <!-- Replace these paths with your actual screenshots -->
+                        <img class="slide active" src="images/projectflow/pf-1.jpg" alt="ProjectFlow – Dashboard" />
+                        <img class="slide" src="images/projectflow/pf-2.jpg" alt="ProjectFlow – Analytics" />
+                        <img class="slide" src="images/projectflow/pf-3.jpg" alt="ProjectFlow – Calendar" />
+                        <img class="slide" src="images/projectflow/pf-4.jpg" alt="ProjectFlow – Grok AI copilot" />
+                    </div>
+                    <button class="slide-arrow slide-prev" aria-label="Previous slide">&#10094;</button>
+                    <button class="slide-arrow slide-next" aria-label="Next slide">&#10095;</button>
+                    <div class="slideshow-dots"></div>
+                    <span class="expand-hint"><i class="fas fa-expand"></i></span>
+                </div>
+
+                <div class="featured-info">
+                    <span class="featured-tag">Personal Project</span>
+                    <h3>ProjectFlow</h3>
+                    <p>
+                        A full-stack productivity and project management app for tracking tasks,
+                        deadlines, and progress across projects. Features a stats-driven dashboard,
+                        an analytics view with completion breakdowns, a calendar, and an integrated
+                        Grok AI copilot that answers questions about tasks and progress. Pro plans
+                        are handled through Stripe.
+                    </p>
+                    <div class="tech-tags">
+                        <span>React</span><span>TypeScript</span><span>Node.js</span>
+                        <span>PostgreSQL</span><span>Stripe</span><span>Grok AI API</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- ===== ACADEMIC PROJECTS — original flip-card timeline kept ===== -->
+        <h3 class="subsection-title">Academic Projects</h3>
+        <div class="project-cards">
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <i class="fas fa-ticket"></i>
+                        <h3>Tickify Website</h3>
+                        <p>A ticketing platform for events.</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Built with HTML, CSS, PHP, SQL, and Docker. Provides seamless event creation and ticket sales management.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <i class="fas fa-plane"></i>
+                        <h3>Airline Management System</h3>
+                        <p>A system for managing airlines.</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Built with Java, SQL, and IntelliJ IDEA. Optimizes airline operations efficiently.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <i class="fas fa-map-location-dot"></i>
+                        <h3>Treasure Map App</h3>
+                        <p>Interactive treasure hunts.</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Built with Kotlin and LoopBack. Enhances user experience with gamified adventures.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <i class="fas fa-plane"></i>
-                    <h3>Airline Management System</h3>
-                    <p>A system for managing airlines.</p>
-                </div>
-                <div class="card-back">
-                    <p>Built with Java, SQL, and IntelliJ IDEA. Optimizes airline operations efficiently.</p>
-                </div>
+    <!-- ================= SKILLS ================= -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Java, Kotlin</li>
+                    <li>PHP, SQL</li>
+                    <li>Python</li>
+                    <li>Dart</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Frontend &amp; Mobile</h3>
+                <ul>
+                    <li>React</li>
+                    <li>React Native &amp; Expo Go</li>
+                    <li>Flutter</li>
+                    <li>Three.js</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend &amp; APIs</h3>
+                <ul>
+                    <li>Node.js &amp; Express.js</li>
+                    <li>LoopBack</li>
+                    <li>Firebase</li>
+                    <li>Stripe (payments)</li>
+                    <li>REST APIs</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Databases &amp; Tools</h3>
+                <ul>
+                    <li>PostgreSQL, MySQL</li>
+                    <li>Docker</li>
+                    <li>Git</li>
+                    <li>IntelliJ IDEA, VS Code</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-people-group"></i> Methodologies</h3>
+                <ul>
+                    <li>Agile (Scrum, Waterfall)</li>
+                    <li>Scrum Master / Product Owner</li>
+                    <li>Sprint Planning</li>
+                    <li>Task Prioritization</li>
+                </ul>
             </div>
         </div>
+    </section>
 
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>Treasure Map App</h3>
-                    <p>Interactive treasure hunts.</p>
-                </div>
-                <div class="card-back">
-                    <p>Built with Kotlin and LoopBack. Enhances user experience with gamified adventures.</p>
-                </div>
-            </div>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to connect, feel free to reach out to me through the following platforms:</p>
+        <div class="socialcontainer">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:you@example.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
-    </div>
-  </section>
+        <button id="cvButton" class="cv-button">View CV</button>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Java, Kotlin, PHP</li>
-      <li>Project Management (Scrum, Waterfall)</li>
-      <li>Git, Docker, PostgreSQL</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>If you'd like to connect, feel free to reach out to me through the following platforms:</p>
-    <div class="socialcontainer">
-      <a href="https://github.com" target="_blank" class="social-icon">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="www.linkedin.com/in/taulant-llumnica-16a63921b" target="_blank" class="social-icon">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.instagram.com/taulantllumnica/" target="_blank" class="social-icon">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-
-    <!-- Modal -->
-    <button id="cvButton" class="cv-button">View CV</button>
-
-    <!-- Modal -->
+    <!-- ================= CV MODAL ================= -->
     <div id="cvModal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <iframe src="FInished CV.pdf"></iframe>
+            <iframe src="files/CV.pdf" title="Taulant Llumnica CV"></iframe>
         </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Taulant Llumnica. All Rights Reserved.</p>
-  </footer>
+    <!-- ================= LIGHTBOX ================= -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <button id="lightboxPrev" class="lightbox-nav" aria-label="Previous image">&#10094;</button>
+        <img id="lightboxImage" src="" alt="" />
+        <button id="lightboxNext" class="lightbox-nav" aria-label="Next image">&#10095;</button>
+        <div id="lightboxCounter" class="lightbox-counter"></div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>&copy; 2026 Taulant Llumnica. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
